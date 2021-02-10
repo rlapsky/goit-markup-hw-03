@@ -8,12 +8,47 @@
   --white-bgc--: #f5f4fa;
 }
 
-/*обнуления для списков*/
-.list {
-  list-style-type: none;
+body {
+  display: block;
 }
 
 /*header*/
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+}
+.navigate {
+  display: flex;
+  align-self: center;
+}
+.nav-site {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav li:not(:last-child),
+.auth-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav {
+  margin-left: 331px;
+}
+
+.auth-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .logo {
   text-decoration-line: none;
   color: var(--title-color-text--);
@@ -22,6 +57,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-right: 93px;
 }
 
 .logo-span {
@@ -31,13 +67,14 @@
 .site-nav .link {
   text-decoration-line: none;
   color: var(--title-color-text--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+
 .site-nav .current {
   color: var(--accent-color--);
 }
@@ -45,7 +82,7 @@
 .auth-nav .link-auth {
   text-decoration: none;
   color: var(--primery-text-color--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -60,109 +97,180 @@
 }
 
 /*hero*/
-section.hero {
+
+.hero {
   background-color: var(--prymeri-bgc--);
+  text-align: center;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero-title {
+.hero h1 {
   color: var(--wite-color--);
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  text-align: center;
+  margin: 0;
+  line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-align: center;
+}
+.hero button {
+  margin-top: 30px;
 }
 
 /*feature*/
 
-.feature.title {
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list li {
+  width: 270px;
+}
+
+.feature-title {
   color: var(--title-color-text--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .feature-list .text {
   color: var(--primery-text-color--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .buton {
   color: #ffffff;
   background-color: var(--accent-color--);
-  font-family: Roboto;
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  line-height: 1.87;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 /*section*/
-.section .title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
+
+.wwd {
+  padding-bottom: 94px;
 }
-/*team*/
-section.team-list {
-  background-color: var(--accent-bgc--);
-}
-.team-list .title {
+
+.wwd-title {
+  margin-bottom: 50px;
   color: var(--title-color-text--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
-.name {
+.wwd-work {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*team*/
+
+.team {
+  background-color: var(--white-bgc--);
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team h2 {
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team p {
+  color: var(--primery-text-color--);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.position {
-  color: var(--primery-text-color--);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+
+.team li {
+  background-color: var(--wite-color--));
+  width: 270px;
+  box-shadow: 
+  0px 1px 3px rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
+.team li:last-child {
+  margin-right: 0;
+}
+
 /*footer*/
 
 address {
   color: var(--wite-color--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
 }
 
 footer {
@@ -189,11 +297,11 @@ footer {
   border-radius: 4px;
   background-color: var(--white-bgc--);
   color: #212121;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   text-decoration-line: none;
@@ -209,18 +317,18 @@ footer {
 
 .works.work-list {
   color: var(--title-color-text--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 }
 .work-class {
   color: var(--primery-text-color--);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
