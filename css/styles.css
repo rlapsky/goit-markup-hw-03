@@ -250,12 +250,10 @@ body {
 }
 
 .team li {
-  background-color: var(--wite-color--));
+  background-color: var(--wite-color--);
   width: 270px;
-  box-shadow: 
-  0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
@@ -265,9 +263,9 @@ body {
 
 /*footer*/
 .logo {
-display: inline-block;
+  display: inline-block;
 }
-footer{
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -280,7 +278,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
 }
-.address  {
+.address {
   margin-top: 20px;
   margin-bottom: 9px;
 }
@@ -292,7 +290,6 @@ address {
 footer {
   background-color: var(--prymeri-bgc--);
 }
-
 
 /*portfolio*/
 .portfolio_hdr {
@@ -307,12 +304,38 @@ footer {
   text-decoration: none;
 }
 
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 56px;
+}
+
+.portfolio-list li:not(:last-child) {
+  margin-right: 52px;
+}
+
+.portfolio-main-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.portfolio-main-conteiner li {
+  margin: 15px;
+  margin-bottom: 79px;
+}
+.portfolio-main-conteiner img {
+  margin-bottom: 20px;
+}
+
 /*кнопки портфолио навигация*/
-.portfolio_main {
+.portfolio-main {
   background-color: var(--accent-bgc--);
 }
 .portfolio-buton {
   border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
   background-color: var(--white-bgc--);
   color: #212121;
   font-family: "Roboto";
@@ -322,25 +345,30 @@ footer {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  text-decoration-line: none;
-  border-radius: 4px;
 }
 .portfolio-buton:hover,
 .portfolio-buton:focus {
   color: var(--wite-color--);
   background-color: var(--accent-color--);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 /*Список Робот*/
 
-.works.work-list {
+.work-list {
   color: var(--title-color-text--);
   font-family: "Roboto";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
+
 .work-class {
   color: var(--primery-text-color--);
   font-family: "Roboto";
@@ -349,4 +377,6 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 4px;
+  padding-left: 24px;
 }
