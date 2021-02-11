@@ -283,7 +283,7 @@ address {
   margin-bottom: 9px;
 }
 
-.auth-nav li:not(:last-child) {
+footer .auth-nav li:not(:last-child) {
   margin-bottom: 9px;
 }
 
