@@ -10,15 +10,16 @@
 
 body {
   display: block;
+  box-sizing: border-box;
 }
 
 /*header*/
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
@@ -317,12 +318,13 @@ footer {
 .portfolio-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  margin-bottom: 50px;
 }
 
 .portfolio-list li:not(:last-child) {
   margin-right: 8px;
+}
+.portfolio-list {
+  margin-bottom: 35px;
 }
 
 .portfolio-main-conteiner {
@@ -342,6 +344,9 @@ footer {
 .portfolio-main-conteiner div {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .portfolio-main-conteiner img {
@@ -351,6 +356,7 @@ footer {
 /*кнопки портфолио навигация*/
 .portfolio-main {
   background-color: var(--accent-bgc--);
+  padding-top: 94px;
 }
 .portfolio-buton {
   border-radius: 4px;
@@ -386,7 +392,6 @@ footer {
   font-size: 18px;
   line-height: 2;
   margin-top: 20px;
-  padding-left: 24px;
 }
 
 .work-class {
@@ -398,6 +403,4 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-top: 4px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
