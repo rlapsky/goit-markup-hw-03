@@ -13,9 +13,14 @@ body {
 }
 
 /*header*/
+header {
+  border: 1px solid #ececec;
+  padding-left: 30px;
+  display: block;
+}
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
@@ -98,7 +103,7 @@ body {
 
 /* main */
 
-.porfolio-main {
+.portfolio-main {
   padding-bottom: 94px;
 }
 
@@ -274,6 +279,7 @@ body {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: block;
 }
 
 address {
@@ -313,25 +319,37 @@ footer {
 .portfolio-list {
   display: flex;
   justify-content: center;
-  padding-top: 91px;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .portfolio-list li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .portfolio-main-conteiner {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-main-conteiner ul {
   margin: -15px;
 }
+
+.portfolio-main-conteiner li {
+  margin: 15px;
+}
+
 .portfolio-main-conteiner div {
-  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
 }
 
 .portfolio-main-conteiner img {
-  margin-bottom: 20px;
+  display: block;
 }
 
 /*кнопки портфолио навигация*/
@@ -371,6 +389,7 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-top: 20px;
   padding-left: 24px;
 }
 
@@ -384,4 +403,5 @@ footer {
   letter-spacing: 0.03em;
   margin-top: 4px;
   padding-left: 24px;
+  padding-bottom: 20px;
 }
