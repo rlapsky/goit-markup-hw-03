@@ -216,12 +216,10 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.profile-card p {
-}
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .profile-card {
@@ -270,8 +268,8 @@ header {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-.team li:last-child {
-  margin-right: 0;
+.team li:not(last-child) {
+  margin-right: 30px;
 }
 
 /*footer*/
